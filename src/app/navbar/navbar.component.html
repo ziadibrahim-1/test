@@ -1,0 +1,24 @@
+<nav [class.p-4]="!isScroll" class="navbar navbar-expand-lg navbar-dark fixed-top p-4 mb-5">
+    <div class="container ">
+      <a class="navbar-brand text-uppercase" routerLink="">Start Framework</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto text-white">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" routerLink="about" routerLinkActive="active">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="portfolio" routerLinkActive="active">portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact" routerLinkActive="active">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="gallary" routerLinkActive="active">gallary</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

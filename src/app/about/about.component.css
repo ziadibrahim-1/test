@@ -1,0 +1,37 @@
+.color{
+    background-color:#1ABC9C;
+}
+.section{
+    margin-top:106px;
+    background-color:#1ABC9C;
+}
+.line-icon {
+    text-align: center;
+}
+
+/* Joined both selectors, since were pretty much the same */
+.line-icon::before,
+.line-icon::after {      
+    /* Styles kept */
+    width: 30%;
+    height: 3px;
+
+    /* Changed to border-top (instead of border) to simulate a line better */
+    border-top: 4px solid #fff; 
+
+    /* Styles added */
+    display: inline-block;
+    content: '';
+  
+    /* Use padding to vertical align the line */
+    /* Use padding in em for a responsive icon height */
+    padding-top: 0.5em; 
+  
+    /* Use margins to give the lines some spacement around the icon */
+    /* Use margins in % for a responsive spacement */   
+    margin-left: 5%; 
+    margin-right: 5%;
+}
+.vh-90{
+    height: 82vh;
+}
